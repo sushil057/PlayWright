@@ -1,5 +1,5 @@
-import {test, expect} from '@playwright/test'
-import { BASE_URL, ROUTES } from './utils/testdata'
+import {test, expect} from '@playwright/test';
+import { BASE_URL, ROUTES } from '../../utils/testdata';
 
 test.describe("Elements Page", async ()=> {
     test("List of different type if UI elements", async ({page})=>{

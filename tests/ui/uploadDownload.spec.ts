@@ -1,5 +1,5 @@
-import {test, expect} from "@playwright/test"
-import { BASE_URL, ROUTES } from "../utils/testdata"
+import {test, expect} from "@playwright/test";
+import { ROUTES, BASE_URL} from '../ui/utils/testdata';
 
 test.describe("Upload and Download", ()=>{
     test("Should upload file(s)", async ({page})=>{

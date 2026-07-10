@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test'
-import { BASE_URL } from './utils/testdata'
+import { BASE_URL } from '../../utils/testdata';
 
 test.describe("Homepage", async ()=> {
     test("UI of the homepage", async ({page})=>{
