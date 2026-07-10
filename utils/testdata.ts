@@ -6,5 +6,6 @@ export const ROUTES = {
     alertsWindows: "/alertsWindows",
     widgets: "/widgets",
     interactions: "/interaction",
-    bookStore: "books"
+    bookStore: "books",
+    upanddownload: "/upload-download"
 }
