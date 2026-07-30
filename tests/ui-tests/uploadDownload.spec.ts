@@ -1,5 +1,5 @@
 import {test, expect} from "@playwright/test";
-import { ROUTES, BASE_URL} from '../ui/utils/testdata';
+import { ROUTES, BASE_URL} from './utils/testdata';
 
 test.describe("Upload and Download", ()=>{
     test("Should upload file(s)", async ({page})=>{
@@ -7,7 +7,7 @@ test.describe("Upload and Download", ()=>{
         await expect(page.getByRole('heading', {name: "Upload and Download"})).toBeVisible();
         const fileInput = page.locator('#uploadFile');
         await fileInput.setInputFiles('tests/assets/sampleFile.jpeg');        
-        await page.setInputFiles("[Choose File='file-input']", "assets/sampleFile.jpeg")
+        await page.setInputFiles("#uploadFile","C:/Users/Shushil/Desktop/Playwright/tests/assets/sampleFile.jpeg");
 
     })
 
