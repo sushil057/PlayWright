@@ -8,7 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'list',
   use: {
-
+    baseURL: "https://sauce-demo.myshopify.com/",
     trace: 'on-first-retry',
   },
   projects: [
